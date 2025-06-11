@@ -44,6 +44,20 @@ export const nextJsConfig = [
       ...pluginReactHooks.configs.recommended.rules,
       // React scope no longer necessary with new JSX transform.
       "react/react-in-jsx-scope": "off",
+      'prettier/prettier': [
+        'warn',
+        {
+          arrowParens: 'always',
+          semi: false,
+          trailingComma: 'none',
+          tabWidth: 2,
+          endOfLine: 'auto',
+          useTabs: false,
+          singleQuote: true,
+          printWidth: 120,
+          jsxSingleQuote: true
+        }
+      ]
     },
   },
 ];
